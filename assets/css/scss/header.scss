@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+a{
+	text-decoration: none;
+}
 
 .container {
 	max-width: 1460px;
@@ -13,7 +16,50 @@
 .header{
 	background-color: rgba(211, 242, 234, 1);
 	padding: 10px 0;
+	.container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	li{
+		list-style: none;
+	}
 }
+.submenu{
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	width: 0;
+}
+.header__block{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.social__block{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	a{
+		display: flex;
+	}
+}
+.menu{
+	&__list{
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+}
+.header__search{
+	border: none;
+	border-radius: 86px;
+	display: flex;
+	background: rgba(255, 255, 255, 1);
+	padding: 15px;
+	cursor: pointer;
+}
+
 
 /* modal block */
 
