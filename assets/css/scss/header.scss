@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	font-family: "Inter";
 }
 a{
 	text-decoration: none;
@@ -25,12 +26,6 @@ a{
 		list-style: none;
 	}
 }
-.submenu{
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	width: 0;
-}
 .header__block{
 	display: flex;
 	align-items: center;
@@ -49,6 +44,83 @@ a{
 		display: flex;
 		align-items: center;
 		gap: 16px;
+	}
+}
+.submenu__item,
+.submenu__item a{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	color: rgba(18, 18, 18, 1);
+}
+.menu__item{
+	position: relative;
+	padding-right: 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	color: rgba(18, 18, 18, 1);
+	&:after{
+		content: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.70699 7.38912L13.364 1.73212L11.95 0.318116L6.99999 5.26812L2.04999 0.318115L0.635986 1.73212L6.29299 7.38912C6.48051 7.57659 6.73482 7.6819 6.99999 7.6819C7.26515 7.6819 7.51946 7.57659 7.70699 7.38912Z" fill="%231B1B29"/></svg>');
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.3s;
+		padding: 2.4px;
+	}
+}
+.menu__item .submenu{
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+.menu__item .submenu .submenu{
+	box-shadow: none;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+}
+.submenu__item{
+	padding: 12px 45px 12px 16px;
+}
+.submenu__item .submenu{
+	position: relative;
+}
+.menu__item.active > .submenu,
+.submenu__item.active > .submenu {
+  display: block;
+  width: 100%;
+}
+.submenu__item.second{
+	position: relative;
+	&:after{
+		content: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.70699 7.38912L13.364 1.73212L11.95 0.318116L6.99999 5.26812L2.04999 0.318115L0.635986 1.73212L6.29299 7.38912C6.48051 7.57659 6.73482 7.6819 6.99999 7.6819C7.26515 7.6819 7.51946 7.57659 7.70699 7.38912Z" fill="%231B1B29"/></svg>');
+		position: absolute;
+		right: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.3s;
+	}
+}
+.menu__item.active::after,
+.submenu__item.active:after{
+	transform: translateY(-50%) rotate(180deg);
+	transform: 0.3s;
+}
+.submenu .submenu .submenu__item{
+	position: relative;
+	&:after{
+		content: "";
+		background-color: rgba(223, 223, 223, 1);
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: -10%;
 	}
 }
 .header__search{
@@ -127,4 +199,67 @@ a{
 
 .auth-tab-content.hidden {
 	display: none;
+}
+.lang__wrapper{
+	background-color: rgba(255, 255, 255, 1);
+	padding: 10px 42px 10px 13px;
+	border-radius: 41px;
+	position: relative;
+	cursor: pointer;
+	height: 39.5px;
+	width: 78px;
+	&:after{
+		content: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.70699 7.38912L13.364 1.73212L11.95 0.318116L6.99999 5.26812L2.04999 0.318115L0.635986 1.73212L6.29299 7.38912C6.48051 7.57659 6.73482 7.6819 6.99999 7.6819C7.26515 7.6819 7.51946 7.57659 7.70699 7.38912Z" fill="%231B1B29"/></svg>');
+		position: absolute;
+		right: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.3s;
+	}
+}
+.langflags{
+	position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 42px 10px 13px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	.lang{
+		display: none;
+		order: 2;
+		a{
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 100%;
+			letter-spacing: 0px;
+			vertical-align: middle;
+			color: rgba(0, 0, 0, 1);
+		}
+	}
+	.lang.current{
+		display: flex;
+		order: 1;
+	}
+}
+.lang__wrapper.active{
+	.lang{
+		display: flex;
+	}
+}
+
+.btn{
+	border: none;
+	padding: 13.5px 24px;
+	background-color: rgba(165, 242, 222, 1);
+	color: rgba(18, 18, 18, 1);
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	font-weight: 600;
+	border-radius: 300px;
+	cursor: pointer;
 }

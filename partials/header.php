@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="http://localhost:8888/vetprofi_php/assets/css/css/style.css">
+	<link rel="stylesheet" href="http://localhost:8888/vetprofi_php/assets/css/fonts/inter.css">
 	<title>VetProfi</title>
 </head>
 <body>
@@ -30,12 +31,18 @@
 				<li class="submenu__item">
 					База знаний о ветеринарных препаратах
 					<ul class="submenu">
-						<li class="submenu__item">База знаний о ветеринарных препаратах</li>
-						<li class="submenu__item">Ветеринарный препарат</li>
-						<li class="submenu__item">Ветеринарный препарат</li>
+						<li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
+						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
+						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
 					</ul>
 				</li>
-				<li class="submenu__item">База знаний о породах кошек</li>
+				<li class="submenu__item">База знаний о породах кошек
+					<ul class="submenu">
+						<li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
+						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
+						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
+					</ul>
+				</li>
 				<li class="submenu__item">Ветеринарный препарат </li>
 			</ul>
 		  </li>
@@ -49,15 +56,16 @@
 		</button>
       <div class="lang__wrapper">
         <ul class="langflags">
-          <li class="lang">RU</li>
-          <li class="lang">EN</li>
+          <li class="lang lang-ru current">RU</li>
+          <li class="lang lang-en">EN</li>
         </ul>
       </div>
     </div>
     <div class="login__block">
       <!-- Кнопки -->
-      <button class="auth-trigger" data-tab="login">Войти</button>
-      <button class="auth-trigger" data-tab="register">Регистрация</button>
+      <button class="btn auth-trigger" data-tab="login">Войти</button>
+      <button class="btn auth-trigger" data-tab="register">Регистрация</button>
     </div>
   </div>
 </header>
+<script src="http://localhost:8888/vetprofi_php/assets/js/header.js"></script>
