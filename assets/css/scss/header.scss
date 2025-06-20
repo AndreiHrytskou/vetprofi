@@ -14,6 +14,48 @@ a{
 	margin: 0 auto;
 	padding: 0 20px;
 }
+.title{
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 120%;
+	letter-spacing: -0.5px;
+	color: rgba(0, 0, 0, 1);
+}
+.subtitle{
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	letter-spacing: -0.5px;
+	color: rgba(27, 27, 27, 1);
+}
+.text{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	color: rgba(27, 27, 27, 1);
+}
+.title-h3{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 120%;
+	letter-spacing: -0.5px;
+	color: rgba(27, 27, 27, 1);
+}
+.title-h4{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+	letter-spacing: -0.5px;
+	color: rgba(37, 37, 37, 1);
+}
+.title-h5{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 120%;
+	letter-spacing: -0.5px;
+	color: rgba(27, 27, 27, 1);
+}
 .header{
 	background-color: rgba(211, 242, 234, 1);
 	padding: 10px 0;
@@ -123,6 +165,7 @@ a{
 		left: -10%;
 	}
 }
+
 .header__search{
 	border: none;
 	border-radius: 86px;
@@ -154,52 +197,6 @@ a{
 	display: none;
 }
 
-/* Контент модального окна */
-.modal-content {
-	background: #fff;
-	padding: 20px;
-	max-width: 500px;
-	width: 90%;
-	border-radius: 8px;
-	position: relative;
-}
-
-/* Закрыть */
-.modal-close {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	font-size: 24px;
-	cursor: pointer;
-}
-
-/* Вкладки */
-.auth-tabs {
-	display: flex;
-	margin-bottom: 15px;
-}
-
-.tab-btn {
-	flex: 1;
-	padding: 10px;
-	cursor: pointer;
-	background: #f5f5f5;
-	border: none;
-	font-weight: bold;
-}
-
-.tab-btn.active {
-	background: #e0e0e0;
-}
-
-/* Контент вкладок */
-.auth-tab-content {
-	display: block;
-}
-
-.auth-tab-content.hidden {
-	display: none;
-}
 .lang__wrapper{
 	background-color: rgba(255, 255, 255, 1);
 	padding: 10px 42px 10px 13px;
@@ -258,8 +255,39 @@ a{
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	font-weight: 600;
 	border-radius: 300px;
 	cursor: pointer;
+}
+
+.burger-btn{
+	display: none;
+}
+
+.main{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.breadcrumbs{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.link__home{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(27, 27, 27, 1);
+}
+.separator{
+	color: rgba(18, 18, 18, 1);
+}
+.current__page{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(158, 158, 158, 1);
 }

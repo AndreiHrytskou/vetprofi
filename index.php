@@ -8,5 +8,8 @@
   <body>
 	<?php include "./partials/header.php"?>
 	<?php include "./partials/footer.php"?>
+	<div class="modal hidden">
+		<?php include "./partials/modal.php"?>
+	</div>
   </body>
 </html>

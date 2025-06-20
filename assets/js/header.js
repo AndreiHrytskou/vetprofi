@@ -56,4 +56,39 @@ document.addEventListener("DOMContentLoaded", () => {
       e.classList.add("second");
     }
   });
+  const burgerBtn = document.getElementById("burgerBtn");
+  const menu = document.querySelector(".menu");
+
+  burgerBtn.addEventListener("click", function () {
+    burgerBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!burgerBtn.contains(e.target) && !menu.contains(e.target)) {
+      burgerBtn.classList.remove("active");
+      menu.classList.remove("active");
+    }
+  });
+
+  // Открытие/закрытие подменю
+  const toggles = document.querySelectorAll(".submenu-toggle");
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", function () {
+      const parent = this.closest(".menu__item");
+      parent.classList.toggle("open");
+    });
+  });
+
+  const loginBtn = document.querySelector(".btn[data-tab='login']");
+  const modal = document.querySelector(".modal");
+  loginBtn.addEventListener("click", () => {
+    const close = document.querySelector(".close-btn");
+    if (modal.classList.contains("hidden")) {
+      modal.classList.remove("hidden");
+      close.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+    }
+  });
 });

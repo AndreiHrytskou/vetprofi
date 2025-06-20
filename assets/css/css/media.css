@@ -1,0 +1,188 @@
+@media (max-width: 768px) {
+  .subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  .title-h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+  }
+  .title-h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .social__block,
+  .lang__wrapper,
+  .login__block {
+    display: none;
+  }
+  .header {
+    background-color: #d6f4ee;
+    padding: 10px 16px;
+  }
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    padding: 12px 16px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+  .menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 60px;
+  }
+  .burger-btn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .burger-icon {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+  }
+  .burger-icon::before,
+  .burger-icon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    left: 0;
+  }
+  .burger-icon::before {
+    top: -6px;
+  }
+  .burger-icon::after {
+    top: 6px;
+  }
+  .burger-btn.active .burger-icon {
+    background-color: transparent;
+  }
+  .burger-btn.active .burger-icon::before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  .burger-btn.active .burger-icon::after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .container {
+    padding: 0;
+  }
+  .submenu {
+    position: relative;
+    width: 100%;
+  }
+  .header__search {
+    padding: 10px;
+  }
+  .footer {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .footer__search {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .footer__search-inputs input[type=email] {
+    width: 100%;
+  }
+  .footer__map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__block {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__block img {
+    width: 100px;
+    height: 38px;
+  }
+  .login-modal {
+    padding: 24px 16px;
+  }
+  .close-btn {
+    top: 29px;
+    right: 16px;
+  }
+}

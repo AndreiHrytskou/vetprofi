@@ -26,26 +26,25 @@
     </div>
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__item">База знаний о животных
-			<ul class="submenu">
-				<li class="submenu__item">
-					База знаний о ветеринарных препаратах
-					<ul class="submenu">
-						<li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
-						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
-						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
-					</ul>
-				</li>
-				<li class="submenu__item">База знаний о породах кошек
-					<ul class="submenu">
-						<li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
-						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
-						<li class="submenu__item"><a href="">Ветеринарный препарат</a></li>
-					</ul>
-				</li>
-				<li class="submenu__item">Ветеринарный препарат </li>
-			</ul>
-		  </li>
+        <li class="menu__item">
+  <div class="submenu-toggle">
+    База знаний о животных
+    <span class="arrow"></span>
+  </div>
+  <ul class="submenu">
+    <li class="submenu__item">База знаний о ветеринарных препаратах
+      <ul class="submenu">
+        <li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
+      </ul>
+    </li>
+    <li class="submenu__item">База знаний о породах кошек
+      <ul class="submenu">
+        <li class="submenu__item"><a href="">База знаний о ветеринарных препаратах</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
         <li class="menu__item">Блог о животных</li>
         <li class="menu__item">Навигация по базе данных</li>
       </ul>
@@ -54,6 +53,9 @@
 		<button class="header__search">
 			<img src="http://localhost:8888/vetprofi_php/assets/images/search.svg" alt="search">
 		</button>
+		<button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+    <div class="burger-icon"></div>
+  </button>
       <div class="lang__wrapper">
         <ul class="langflags">
           <li class="lang lang-ru current">RU</li>
@@ -68,4 +70,5 @@
     </div>
   </div>
 </header>
+
 <script src="http://localhost:8888/vetprofi_php/assets/js/header.js"></script>
