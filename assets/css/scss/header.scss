@@ -179,7 +179,8 @@ a{
 /* modal block */
 
 /* Общий стиль модалки */
-.modal {
+.modal,
+.modal-form {
 	position: fixed;
 	top: 0;
 	left: 0;

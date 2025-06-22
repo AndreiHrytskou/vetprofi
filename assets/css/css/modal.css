@@ -16,7 +16,8 @@
   border-top: 1px solid rgb(217, 217, 217);
 }
 
-.close-btn {
+.close-btn,
+.close-button {
   position: absolute;
   right: 32px;
   top: 37px;

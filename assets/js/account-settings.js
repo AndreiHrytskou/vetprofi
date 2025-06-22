@@ -16,3 +16,21 @@ fileInput.addEventListener("change", () => {
     reader.readAsDataURL(file);
   }
 });
+
+const modalDelete = document.querySelector(".modal-form");
+const btnDeLeteAccount = document.querySelector("#btn__delete-account");
+const btnCancel = document.querySelector("#btn-cancel");
+
+btnDeLeteAccount.addEventListener("click", (e) => {
+  e.preventDefault();
+  const close = document.querySelector(".close-button");
+  if (modalDelete.classList.contains("hidden")) {
+    modalDelete.classList.remove("hidden");
+    close.addEventListener("click", () => {
+      modalDelete.classList.add("hidden");
+    });
+    btnCancel.addEventListener("click", () => {
+      modalDelete.classList.add("hidden");
+    });
+  }
+});
