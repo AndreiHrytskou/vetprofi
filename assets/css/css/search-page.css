@@ -1,0 +1,101 @@
+.search__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.search__page .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 31px;
+}
+.search__page .search__page-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.search__page .search__page-inputs #search {
+  width: 100%;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: rgb(158, 158, 158);
+  background: rgb(255, 255, 255);
+  height: 64px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  padding: 23px 35px;
+}
+.search__page .search__page-inputs #search::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(40, 43, 71, 0.5);
+}
+.search__page .search__page-inputs #search::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(40, 43, 71, 0.5);
+}
+.search__page .search__page-inputs #search:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(40, 43, 71, 0.5);
+}
+.search__page .search__page-inputs #search::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(40, 43, 71, 0.5);
+}
+.search__page .search__page-inputs #search::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(40, 43, 71, 0.5);
+}
+.search__page .search__page-inputs #searchBtn {
+  cursor: pointer;
+  border: none;
+  height: 64px;
+  background: rgb(165, 242, 222);
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 24.5px 42.5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: rgb(18, 18, 18);
+}
