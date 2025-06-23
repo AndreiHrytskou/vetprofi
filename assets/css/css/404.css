@@ -20,22 +20,24 @@
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.error__page-content .btn__list {
-  -webkit-margin-start: 30px;
-          margin-inline-start: 30px;
-  margin-bottom: 32px;
-}
-.error__page-content .btn__item {
-  text-decoration: underline;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 120%;
-  letter-spacing: -0.5px;
-}
 .error__page-image {
   max-width: 45%;
   width: 100%;
 }
 .error__page-image img {
   width: 100%;
+}
+
+.btn__list {
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+  margin-bottom: 32px;
+}
+
+.btn__item {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
 }
