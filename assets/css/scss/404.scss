@@ -1,0 +1,36 @@
+.error__page{
+	padding-top: 176px;
+	padding-bottom: 176px;
+	display: flex;
+	justify-content: space-between;
+	gap: 59px;
+	&-content{
+		max-width: 50%;
+		width: 100%;
+		.title{
+			margin-bottom: 10px;
+		}
+		.text{
+			margin-top: 32px;
+			margin-bottom: 32px;
+		}
+		.btn__list{
+			margin-inline-start: 30px;
+			margin-bottom: 32px;
+		}
+		.btn__item{
+			text-decoration: underline;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 120%;
+			letter-spacing: -0.5px;
+		}
+	}
+	&-image{
+		max-width: 45%;
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+}
