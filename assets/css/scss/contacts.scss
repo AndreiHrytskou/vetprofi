@@ -1,0 +1,79 @@
+.contacts__page{
+	.title{
+		margin-top: 24px;
+	}
+}
+.contacts__wrapper{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	gap: 32px;
+	justify-content: space-between;
+	.map{
+		max-width: 622px;
+		width: 100%;
+		border-radius: 35px;
+	}
+	.contacts__content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.contacts__block{
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.contacts__container{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.work__time{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		.btn{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		span{
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 120%;
+			letter-spacing: -0.5px;
+			position: super;
+			sup{
+				vertical-align: super;
+			}
+		}
+	}
+	.contacts__number{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.contacts__box{
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.contacts__list{
+		display: flex;
+		gap: 32px;
+		justify-content: space-between;
+	}
+	.contacts__item{
+		padding: 20px 25px;
+		border-radius: 35px;
+		background: rgba(249, 249, 249, 1);
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		.title-h4{
+			min-height: 48px;
+		}
+	}
+}
